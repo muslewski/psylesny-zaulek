@@ -1,0 +1,21 @@
+{
+  "id": "galeria",
+  "eyebrow": "Metamorfozy",
+  "title": "Galeria realizacji",
+  "subtitle": "Zobacz, jak pracujemy — efekty mówią za siebie",
+  "layout": "before-after",
+  "items": [
+    { "id": "1", "before": "/gallery/dog-1-before.jpg", "after": "/gallery/dog-1-after.jpg", "alt": "Yorkshire terrier przed i po strzyżeniu", "breed": "Yorkshire terrier" },
+    { "id": "2", "before": "/gallery/dog-2-before.jpg", "after": "/gallery/dog-2-after.jpg", "alt": "Sznaucer średni przed i po trymowaniu",  "breed": "Sznaucer średni" },
+    { "id": "3", "before": "/gallery/dog-3-before.jpg", "after": "/gallery/dog-3-after.jpg", "alt": "Bichon frise przed i po strzyżeniu",      "breed": "Bichon frise" },
+    { "id": "4", "before": "/gallery/dog-4-before.jpg", "after": "/gallery/dog-4-after.jpg", "alt": "Golden retriever przed i po kąpieli",   "breed": "Golden retriever" },
+    { "id": "5", "before": "/gallery/dog-5-before.jpg", "after": "/gallery/dog-5-after.jpg", "alt": "Samojed przed i po wyczesaniu podszerstka", "breed": "Samojed" },
+    { "id": "6", "before": "/gallery/dog-6-before.jpg", "after": "/gallery/dog-6-after.jpg", "alt": "Pudel miniaturowy przed i po strzyżeniu", "breed": "Pudel miniaturowy" }
+  ],
+  "cta": {
+    "label": "Zobacz więcej na Facebooku",
+    "href": "https://www.facebook.com/profile.php?id=61576135987444",
+    "icon": "facebook"
+  },
+  "_notes": "Uzupełnij zdjęciami przed/po z prawdziwych wizyt. Najlepsze rezultaty dają fotografie w naturalnym świetle, robione w tym samym kadrze."
+}

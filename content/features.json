@@ -1,0 +1,38 @@
+{
+  "id": "dlaczego-my",
+  "eyebrow": "Dlaczego my",
+  "title": "Co nas wyróżnia",
+  "subtitle": "To, co najbardziej cenią właściciele i ich czworonogi",
+  "items": [
+    {
+      "icon": "heart",
+      "title": "Indywidualne podejście",
+      "description": "Każdy pies jest inny. Dobieramy tempo i technikę pielęgnacji do jego charakteru, wieku i potrzeb."
+    },
+    {
+      "icon": "shield",
+      "title": "Bezpieczeństwo przede wszystkim",
+      "description": "Pracujemy spokojnie, bez pośpiechu. Stosujemy sprawdzone, bezpieczne narzędzia i metody."
+    },
+    {
+      "icon": "leaf",
+      "title": "Wysokiej jakości kosmetyki",
+      "description": "Profesjonalne, hipoalergiczne szampony i odżywki dopasowane do typu sierści i skóry."
+    },
+    {
+      "icon": "clock",
+      "title": "Jeden pies na raz",
+      "description": "Bez kojców, bez presji i bez czekania. Twój pies ma nas tylko dla siebie."
+    },
+    {
+      "icon": "paw",
+      "title": "Wszystkie rasy",
+      "description": "Małe, duże, krótkowłose, długowłose, szorstkowłose — znamy specyfikę każdej rasy."
+    },
+    {
+      "icon": "smile",
+      "title": "Pozytywne doświadczenie",
+      "description": "Chcemy, żeby Twój pies wracał chętnie. Cierpliwość, smaczki i mnóstwo pochwał."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "o-nas",
+  "eyebrow": "Poznaj nas",
+  "title": "Spokojne miejsce dla Twojego psa",
+  "subtitle": "Kameralny salon, w którym pies jest najważniejszy",
+  "paragraphs": [
+    "PsyLeśny Zaułek to kameralny salon groomerski, w którym każdy pies traktowany jest indywidualnie. Nie pracujemy w pośpiechu — pies trafia do nas na swoich warunkach, w spokojnej atmosferze, bez stresu i czekania w kojcu.",
+    "Łączymy profesjonalne strzyżenie zgodne ze wzorcem rasy z troską o samopoczucie zwierzaka. Wierzymy, że dobrze pielęgnowany pies to nie tylko ładniejszy wygląd, ale przede wszystkim zdrowa skóra, sierść i lepsza jakość życia.",
+    "Zapraszamy psy wszystkich ras, wielkości i charakterów — szczególnie te, które potrzebują więcej cierpliwości."
+  ],
+  "stats": [
+    { "value": "100%", "label": "indywidualnego podejścia" },
+    { "value": "1 pies", "label": "obsługiwany w jednym czasie" },
+    { "value": "0",   "label": "pośpiechu i presji" }
+  ],
+  "image": {
+    "src": "/about-salon.jpg",
+    "alt": "Wnętrze salonu groomerskiego PsyLeśny Zaułek"
+  }
+}

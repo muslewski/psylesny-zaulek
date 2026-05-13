@@ -1,0 +1,28 @@
+{
+  "eyebrow": "Salon groomerski",
+  "title": "Profesjonalna pielęgnacja Twojego psa",
+  "titleHighlight": "pielęgnacja",
+  "subtitle": "Strzyżenie, kąpiel i pielęgnacja w spokojnej, leśnej atmosferze. Każdy pies zasługuje na cierpliwość, troskę i indywidualne podejście.",
+  "primaryCta": {
+    "label": "Umów wizytę",
+    "href": "tel:+48733538638",
+    "icon": "phone"
+  },
+  "secondaryCta": {
+    "label": "Zobacz usługi",
+    "href": "#uslugi",
+    "icon": "arrow-down"
+  },
+  "trustSignals": [
+    { "label": "Indywidualne podejście", "icon": "heart" },
+    { "label": "Bezpieczne kosmetyki",   "icon": "leaf" },
+    { "label": "Wszystkie rasy",         "icon": "paw" }
+  ],
+  "media": {
+    "image": {
+      "src": "/hero-dog.jpg",
+      "alt": "Zadbany pies po wizycie w salonie groomerskim"
+    },
+    "video": null
+  }
+}

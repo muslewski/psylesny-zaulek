@@ -1,0 +1,66 @@
+{
+  "primary": {
+    "id": "book-visit",
+    "eyebrow": "Czas na metamorfozę",
+    "title": "Umów wizytę dla swojego psa",
+    "subtitle": "Zadzwoń lub napisz na Messengerze — odpowiemy najszybciej, jak to możliwe.",
+    "primaryAction": {
+      "label": "Zadzwoń: 733 538 638",
+      "href": "tel:+48733538638",
+      "icon": "phone"
+    },
+    "secondaryAction": {
+      "label": "Napisz na Messengerze",
+      "href": "https://m.me/61576135987444",
+      "icon": "messenger"
+    },
+    "image": {
+      "src": "/cta-dog.jpg",
+      "alt": "Pies po wizycie w salonie groomerskim"
+    }
+  },
+  "banner": {
+    "id": "advice-banner",
+    "title": "Nie wiesz, jakiej pielęgnacji potrzebuje Twój pies?",
+    "subtitle": "Doradzimy. Wystarczy jeden telefon.",
+    "action": {
+      "label": "Zadzwoń teraz",
+      "href": "tel:+48733538638",
+      "icon": "phone"
+    }
+  },
+  "newsletter": {
+    "enabled": false,
+    "title": "Porady pielęgnacyjne raz w miesiącu",
+    "subtitle": "Zapisz się, żeby otrzymywać sprawdzone wskazówki o sierści, skórze i pielęgnacji psa.",
+    "buttonLabel": "Zapisz się",
+    "placeholder": "Twój adres e-mail",
+    "consent": "Wyrażam zgodę na otrzymywanie informacji marketingowych i akceptuję politykę prywatności."
+  },
+  "contactCard": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Jesteśmy do Twojej dyspozycji — wybierz najwygodniejszy sposób kontaktu.",
+    "channels": [
+      {
+        "icon": "phone",
+        "label": "Telefon",
+        "value": "733 538 638",
+        "href": "tel:+48733538638"
+      },
+      {
+        "icon": "mail",
+        "label": "E-mail",
+        "value": "psylesnyzaulek@gmail.com",
+        "href": "mailto:psylesnyzaulek@gmail.com"
+      },
+      {
+        "icon": "facebook",
+        "label": "Facebook",
+        "value": "PsyLeśny Zaułek",
+        "href": "https://www.facebook.com/profile.php?id=61576135987444"
+      }
+    ]
+  }
+}

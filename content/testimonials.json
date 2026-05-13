@@ -1,0 +1,42 @@
+{
+  "id": "opinie",
+  "eyebrow": "Opinie",
+  "title": "Co mówią właściciele",
+  "subtitle": "Zaufały nam dziesiątki właścicieli psów",
+  "items": [
+    {
+      "name": "Anna K.",
+      "dog": "Maja, yorkshire terrier",
+      "rating": 5,
+      "quote": "Maja wraca z salonu jak nowa — pachnąca, zadbana i zawsze w świetnym humorze. Polecam każdemu właścicielowi yorka!",
+      "source": "Facebook"
+    },
+    {
+      "name": "Piotr M.",
+      "dog": "Borys, sznaucer średni",
+      "rating": 5,
+      "quote": "Świetne trymowanie zgodne ze wzorcem rasy. Borys wcześniej źle znosił wizyty u groomera — tutaj jest spokojny i zrelaksowany.",
+      "source": "Facebook"
+    },
+    {
+      "name": "Magdalena W.",
+      "dog": "Lola, golden retriever",
+      "rating": 5,
+      "quote": "Cierpliwość i podejście do psa na medal. Lola po raz pierwszy w życiu nie protestowała przy kąpieli. Wracamy na pewno!",
+      "source": "Google"
+    },
+    {
+      "name": "Tomasz B.",
+      "dog": "Fenix, husky syberyjski",
+      "rating": 5,
+      "quote": "Po wyczesaniu podszerstka mam wrażenie, że w domu zostało o połowę mniej sierści. Fenix wyszedł zadowolony i bez stresu.",
+      "source": "Facebook"
+    }
+  ],
+  "cta": {
+    "label": "Zobacz wszystkie opinie na Facebooku",
+    "href": "https://www.facebook.com/profile.php?id=61576135987444/reviews",
+    "icon": "facebook"
+  },
+  "_notes": "Powyższe opinie są przykładowymi szablonami układu. Zastąp prawdziwymi recenzjami od klientów — za zgodą autorów lub publikuj te już opublikowane na Facebooku/Google."
+}

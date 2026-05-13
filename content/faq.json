@@ -1,0 +1,52 @@
+{
+  "id": "faq",
+  "eyebrow": "FAQ",
+  "title": "Najczęściej zadawane pytania",
+  "subtitle": "Wszystko, co warto wiedzieć przed pierwszą wizytą",
+  "items": [
+    {
+      "question": "Jak umówić wizytę?",
+      "answer": "Najprościej zadzwonić pod numer 733 538 638 lub napisać wiadomość na naszym Facebooku. Wizyty umawiamy z wyprzedzeniem, żeby każdy pies miał swój dedykowany czas."
+    },
+    {
+      "question": "Ile trwa wizyta?",
+      "answer": "Pełna pielęgnacja trwa zwykle od 1,5 do 3 godzin — w zależności od wielkości psa, rasy i stanu sierści. Sama kąpiel to ok. 45 – 90 minut."
+    },
+    {
+      "question": "Czy mogę zostać z psem podczas zabiegu?",
+      "answer": "Większość psów pracuje spokojniej bez właściciela w pobliżu — łatwiej skupiają się na zabiegu. Jeśli jednak Twój pies jest bardzo niespokojny lub przychodzi pierwszy raz, możemy ustalić indywidualne rozwiązanie."
+    },
+    {
+      "question": "Czy mój pies musi być zaszczepiony?",
+      "answer": "Tak — wymagamy aktualnego szczepienia przeciw wściekliźnie. Dla bezpieczeństwa wszystkich psów odwiedzających salon rekomendujemy także szczepienia podstawowe i odrobaczenie."
+    },
+    {
+      "question": "Jak często strzyc psa?",
+      "answer": "Większość ras wymaga pielęgnacji co 6 – 8 tygodni. Psy z szybko rosnącą sierścią (np. pudle, bichony, yorki) mogą wymagać częstszych wizyt. Doradzimy Ci najlepszy rytm podczas pierwszego spotkania."
+    },
+    {
+      "question": "Czy strzyżecie psy lękliwe lub reaktywne?",
+      "answer": "Pracujemy z cierpliwością i bez przemocy. Przy psach bardzo lękliwych lub reaktywnych prosimy o wcześniejszą rozmowę — w niektórych przypadkach dzielimy wizytę na etapy, w innych zalecamy konsultację z behawiorystą lub weterynarzem."
+    },
+    {
+      "question": "Jakie kosmetyki stosujecie?",
+      "answer": "Używamy wyłącznie profesjonalnych kosmetyków groomerskich — hipoalergicznych, dopasowanych do typu sierści i kondycji skóry. Przy alergiach lub schorzeniach skóry dobieramy preparaty indywidualnie."
+    },
+    {
+      "question": "Czy obsługujecie wszystkie rasy?",
+      "answer": "Tak — pracujemy z psami wszystkich ras i mieszańcami, w każdym wieku i rozmiarze. Specjalizujemy się również w strzyżeniach zgodnych ze wzorcem rasy."
+    },
+    {
+      "question": "Co jeśli muszę odwołać wizytę?",
+      "answer": "Prosimy o odwołanie wizyty najpóźniej dzień wcześniej — pozwala to przyjąć innego psa w zwolnionym terminie."
+    },
+    {
+      "question": "Jak przygotować psa do pierwszej wizyty?",
+      "answer": "Wystarczy spacer i lekki posiłek na 1 – 2 godziny przed wizytą. Jeśli pies ma ulubioną zabawkę lub smaczek — zabierz je ze sobą. Resztą zajmiemy się my."
+    },
+    {
+      "question": "Czy strzyżecie koty?",
+      "answer": "Specjalizujemy się wyłącznie w psach. W razie potrzeby chętnie polecimy zaufany salon dla kotów."
+    }
+  ]
+}

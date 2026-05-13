@@ -1,0 +1,35 @@
+{
+  "tagline": "Profesjonalna pielęgnacja psów w spokojnej atmosferze.",
+  "columns": [
+    {
+      "title": "Salon",
+      "links": [
+        { "label": "O nas",   "href": "#o-nas"   },
+        { "label": "Usługi",  "href": "#uslugi"  },
+        { "label": "Cennik",  "href": "#cennik"  },
+        { "label": "Galeria", "href": "#galeria" }
+      ]
+    },
+    {
+      "title": "Informacje",
+      "links": [
+        { "label": "FAQ",                   "href": "#faq"                  },
+        { "label": "Opinie",                "href": "#opinie"               },
+        { "label": "Polityka prywatności",  "href": "/polityka-prywatnosci" }
+      ]
+    },
+    {
+      "title": "Kontakt",
+      "links": [
+        { "label": "733 538 638",            "href": "tel:+48733538638"          },
+        { "label": "psylesnyzaulek@gmail.com","href": "mailto:psylesnyzaulek@gmail.com" },
+        { "label": "Facebook",               "href": "https://www.facebook.com/profile.php?id=61576135987444", "external": true }
+      ]
+    }
+  ],
+  "social": [
+    { "name": "Facebook", "icon": "facebook", "href": "https://www.facebook.com/profile.php?id=61576135987444" }
+  ],
+  "copyright": "© {year} PsyLeśny Zaułek. Wszelkie prawa zastrzeżone.",
+  "credit": ""
+}

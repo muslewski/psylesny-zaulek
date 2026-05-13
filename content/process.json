@@ -1,0 +1,26 @@
+{
+  "id": "jak-to-dziala",
+  "eyebrow": "Jak to działa",
+  "title": "Trzy proste kroki do zadbanego psa",
+  "subtitle": "Tak wygląda wizyta w PsyLeśnym Zaułku — od pierwszego kontaktu po odbiór psa",
+  "steps": [
+    {
+      "number": "01",
+      "icon": "phone",
+      "title": "Umów wizytę",
+      "description": "Zadzwoń lub napisz na Facebooku. Porozmawiamy o rasie, sierści i Twoich oczekiwaniach — i wspólnie ustalimy dogodny termin."
+    },
+    {
+      "number": "02",
+      "icon": "scissors",
+      "title": "Wizyta w salonie",
+      "description": "Pies trafia w nasze ręce. Pracujemy spokojnie, z przerwami, jeśli są potrzebne — bez pośpiechu i bez stresu."
+    },
+    {
+      "number": "03",
+      "icon": "heart",
+      "title": "Odbiór i porady",
+      "description": "Dzwonimy, gdy wszystko gotowe. Omawiamy zabieg, podpowiadamy, jak dbać o sierść w domu i ustalamy kolejny termin."
+    }
+  ]
+}

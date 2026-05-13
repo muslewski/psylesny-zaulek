@@ -1,0 +1,55 @@
+{
+  "name": "PsyLeśny Zaułek",
+  "shortName": "PsyLeśny Zaułek",
+  "tagline": "Salon groomerski dla Twojego psa",
+  "description": "Profesjonalna pielęgnacja i strzyżenie psów wszystkich ras. Indywidualne podejście, spokojna atmosfera i wysokiej jakości kosmetyki.",
+  "locale": "pl-PL",
+  "logo": {
+    "src": "/logo.svg",
+    "alt": "PsyLeśny Zaułek — salon groomerski"
+  },
+  "contact": {
+    "phone": {
+      "display": "733 538 638",
+      "raw": "+48733538638",
+      "href": "tel:+48733538638"
+    },
+    "email": {
+      "display": "psylesnyzaulek@gmail.com",
+      "href": "mailto:psylesnyzaulek@gmail.com"
+    }
+  },
+  "social": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/profile.php?id=61576135987444",
+      "handle": "PsyLeśny Zaułek",
+      "icon": "facebook"
+    },
+    {
+      "name": "Messenger",
+      "url": "https://m.me/61576135987444",
+      "handle": "Napisz wiadomość",
+      "icon": "messenger"
+    }
+  ],
+  "address": {
+    "street": "",
+    "city": "",
+    "postalCode": "",
+    "region": "",
+    "country": "Polska",
+    "mapEmbedUrl": "",
+    "googleMapsUrl": ""
+  },
+  "openingHours": [
+    { "day": "Poniedziałek", "short": "Pn", "hours": "09:00 – 18:00", "closed": false },
+    { "day": "Wtorek",       "short": "Wt", "hours": "09:00 – 18:00", "closed": false },
+    { "day": "Środa",        "short": "Śr", "hours": "09:00 – 18:00", "closed": false },
+    { "day": "Czwartek",     "short": "Cz", "hours": "09:00 – 18:00", "closed": false },
+    { "day": "Piątek",       "short": "Pt", "hours": "09:00 – 18:00", "closed": false },
+    { "day": "Sobota",       "short": "So", "hours": "10:00 – 14:00", "closed": false },
+    { "day": "Niedziela",    "short": "Nd", "hours": "Zamknięte",      "closed": true  }
+  ],
+  "_notes": "Adres i godziny otwarcia to wartości domyślne — uzupełnij rzeczywistymi danymi salonu. Numer telefonu i adres e-mail pochodzą od klienta."
+}

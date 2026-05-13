@@ -1,0 +1,30 @@
+{
+  "id": "cennik",
+  "eyebrow": "Cennik",
+  "title": "Przejrzysty cennik",
+  "subtitle": "Ceny startowe — ostateczna kwota ustalana jest indywidualnie podczas wizyty",
+  "disclaimer": "Cena zależy od wielkości psa, długości i stanu sierści oraz zakresu zabiegu. W przypadku silnego skołtunienia sierści cena może być wyższa.",
+  "sizes": [
+    { "id": "small",  "label": "Mały",   "description": "do 10 kg",       "examples": "yorkshire, maltańczyk, chihuahua" },
+    { "id": "medium", "label": "Średni", "description": "10 – 20 kg",     "examples": "cocker spaniel, sznaucer średni" },
+    { "id": "large",  "label": "Duży",   "description": "powyżej 20 kg",  "examples": "labrador, golden, owczarek" }
+  ],
+  "table": [
+    { "service": "Strzyżenie kompleksowe",  "small": "od 120 zł", "medium": "od 160 zł", "large": "od 220 zł" },
+    { "service": "Kąpiel pielęgnacyjna",    "small": "od 60 zł",  "medium": "od 90 zł",  "large": "od 130 zł" },
+    { "service": "Trymowanie",              "small": "od 180 zł", "medium": "od 240 zł", "large": "od 320 zł" },
+    { "service": "Wyczesywanie podszerstka","small": "od 100 zł", "medium": "od 150 zł", "large": "od 220 zł" }
+  ],
+  "additional": [
+    { "service": "Obcinanie pazurów",         "price": "od 30 zł" },
+    { "service": "Czyszczenie uszu",          "price": "od 30 zł" },
+    { "service": "Higiena okolic intymnych",  "price": "od 40 zł" },
+    { "service": "Wystrzyganie poduszek łap", "price": "od 30 zł" }
+  ],
+  "payment": {
+    "title": "Płatność",
+    "methods": ["gotówka", "BLIK", "przelew"],
+    "note": "Płatność po zakończeniu wizyty."
+  },
+  "_notes": "Ceny startowe — zweryfikuj i dostosuj do swojego cennika przed publikacją."
+}

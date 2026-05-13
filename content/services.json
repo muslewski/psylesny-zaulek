@@ -1,0 +1,99 @@
+{
+  "id": "uslugi",
+  "eyebrow": "Co robimy",
+  "title": "Nasze usługi",
+  "subtitle": "Pełna pielęgnacja — od kąpieli po stylowe strzyżenie",
+  "priceNote": "Ceny zależą od rasy, wielkości i stanu sierści psa. Ostateczna cena ustalana jest podczas wizyty.",
+  "currency": "zł",
+  "sizes": [
+    { "id": "small",  "label": "Mały",   "description": "do 10 kg" },
+    { "id": "medium", "label": "Średni", "description": "10 – 20 kg" },
+    { "id": "large",  "label": "Duży",   "description": "powyżej 20 kg" }
+  ],
+  "items": [
+    {
+      "id": "full-groom",
+      "icon": "scissors",
+      "name": "Strzyżenie kompleksowe",
+      "shortDescription": "Pełen pakiet pielęgnacji — pies wychodzi pachnący, wystrzyżony i zadbany.",
+      "description": "Kąpiel w odpowiednio dobranym szamponie, suszenie, czesanie, strzyżenie maszynką i nożyczkami, czyszczenie uszu, obcinanie pazurów oraz higiena okolic intymnych i poduszek łap.",
+      "includes": [
+        "Kąpiel i suszenie",
+        "Strzyżenie zgodne z rasą lub życzeniem właściciela",
+        "Czyszczenie uszu",
+        "Obcinanie pazurów",
+        "Wystrzyganie poduszek łap"
+      ],
+      "duration": "1,5 – 3 h",
+      "prices": { "small": "od 120 zł", "medium": "od 160 zł", "large": "od 220 zł" },
+      "popular": true
+    },
+    {
+      "id": "bath",
+      "icon": "droplet",
+      "name": "Kąpiel pielęgnacyjna",
+      "shortDescription": "Świeżość, czystość i delikatna pielęgnacja sierści.",
+      "description": "Kąpiel w szamponie dobranym do typu sierści i potrzeb skóry, odżywka, suszenie i wyczesanie. Idealna pomiędzy strzyżeniami.",
+      "includes": [
+        "Szampon dobrany indywidualnie",
+        "Odżywka pielęgnacyjna",
+        "Suszenie i wyczesanie",
+        "Lekkie perfumy dla psa"
+      ],
+      "duration": "45 – 90 min",
+      "prices": { "small": "od 60 zł", "medium": "od 90 zł", "large": "od 130 zł" },
+      "popular": false
+    },
+    {
+      "id": "trimming",
+      "icon": "comb",
+      "name": "Trymowanie",
+      "shortDescription": "Pielęgnacja sierści szorstkowłosej zgodnie ze wzorcem rasy.",
+      "description": "Ręczne wyrywanie martwego włosa (hand stripping) dla ras takich jak sznaucer, foksterier czy westie. Zachowuje strukturę i kolor sierści.",
+      "duration": "2 – 4 h",
+      "prices": { "small": "od 180 zł", "medium": "od 240 zł", "large": "od 320 zł" },
+      "popular": false
+    },
+    {
+      "id": "deshedding",
+      "icon": "wind",
+      "name": "Wyczesywanie podszerstka",
+      "shortDescription": "Koniec z kłakami w domu — usuwamy martwy podszerstek.",
+      "description": "Zabieg dla ras z gęstym podszerstkiem (husky, owczarek niemiecki, samojed). Kąpiel, suszenie i dokładne wyczesanie z użyciem furminatora.",
+      "duration": "1,5 – 3 h",
+      "prices": { "small": "od 100 zł", "medium": "od 150 zł", "large": "od 220 zł" },
+      "popular": false
+    },
+    {
+      "id": "nails",
+      "icon": "paw",
+      "name": "Obcinanie pazurów",
+      "shortDescription": "Krótki, bezpieczny zabieg dla zdrowych łap.",
+      "description": "Obcinanie pazurów cążkami lub szlifowanie szlifierką — dostosowane do tolerancji psa.",
+      "duration": "10 – 20 min",
+      "price": "od 30 zł",
+      "popular": false
+    },
+    {
+      "id": "ears",
+      "icon": "ear",
+      "name": "Czyszczenie i pielęgnacja uszu",
+      "shortDescription": "Higiena uszu i kontrola zdrowia kanału słuchowego.",
+      "description": "Czyszczenie małżowin specjalistycznym preparatem, depilacja włosków z kanału (jeśli wymagana). Profilaktyka stanów zapalnych.",
+      "duration": "15 – 30 min",
+      "price": "od 30 zł",
+      "popular": false
+    },
+    {
+      "id": "sanitary",
+      "icon": "scissors-small",
+      "name": "Higiena okolic intymnych",
+      "shortDescription": "Krótkie skrócenie sierści dla wygody i czystości.",
+      "description": "Wystrzyganie sierści wokół oczu, w okolicach pachwin oraz poduszek łap. Szybki zabieg poprawiający komfort psa na co dzień.",
+      "duration": "15 – 30 min",
+      "price": "od 40 zł",
+      "popular": false
+    }
+  ],
+  "_notes": "Ceny są wartościami startowymi — zweryfikuj i dostosuj do swojego cennika przed publikacją."
+}
