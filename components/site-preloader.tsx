@@ -127,12 +127,24 @@ export function SitePreloader({
           <motion.div
             key="brand-block"
             initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -6 }}
-            transition={{
-              duration: 0.55,
-              delay: 0.12,
-              ease: [0.22, 1, 0.36, 1],
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.55,
+                delay: 0.12,
+                ease: [0.22, 1, 0.36, 1],
+              },
+            }}
+            // Exit FAST + with no delay so the brand text is gone before the
+            // preloader's variant exit (~0.8s) starts revealing the page bg.
+            // Without this, the brand briefly sits on top of the revealing
+            // page — and if its color matches the page bg (e.g. yellow brand
+            // on yellow ex4 page) it looks like low-contrast text.
+            exit={{
+              opacity: 0,
+              y: -6,
+              transition: { duration: 0.18, ease: "easeOut" },
             }}
             className="pointer-events-none fixed inset-0 z-[71] flex items-center justify-center px-6"
             aria-hidden
