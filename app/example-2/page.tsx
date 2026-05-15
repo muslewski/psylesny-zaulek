@@ -41,9 +41,11 @@ export default function Example2() {
           </nav>
           <a
             href={site.contact.phone.href}
-            className="rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white"
+            className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white"
           >
-            {site.contact.phone.display}
+            <PhoneIcon size={14} />
+            <span className="hidden sm:inline">{site.contact.phone.display}</span>
+            <span className="sm:hidden">Zadzwoń</span>
           </a>
         </div>
       </header>

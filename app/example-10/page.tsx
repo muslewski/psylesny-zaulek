@@ -58,10 +58,12 @@ export default function Example10() {
           </nav>
           <a
             href={site.contact.phone.href}
-            className="flex items-center gap-2 rounded-full px-5 py-2 text-sm font-black uppercase tracking-wider text-[#F4E8D8]"
+            className="flex items-center gap-2 rounded-full px-3 py-2 text-xs font-black uppercase tracking-wider text-[#F4E8D8] sm:px-5 sm:text-sm"
             style={{ background: brown }}
           >
-            <PhoneIcon size={14} /> {site.contact.phone.display}
+            <PhoneIcon size={14} />
+            <span className="hidden sm:inline">{site.contact.phone.display}</span>
+            <span className="sm:hidden">Dzwoń</span>
           </a>
         </div>
       </header>
@@ -78,7 +80,7 @@ export default function Example10() {
               <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-xs font-black uppercase tracking-[0.25em]" style={{ color: orange }}>
                 ★ Salon groomerski · od 2024 ★
               </span>
-              <RevealH1 className="mt-6 text-6xl font-black uppercase leading-[0.9] tracking-tight md:text-8xl">
+              <RevealH1 className="mt-6 text-5xl font-black uppercase leading-[0.9] tracking-tight md:text-8xl">
                 Twój pies.<br />
                 <span className="inline-block -rotate-1 rounded-2xl px-3 text-[#F4E8D8]" style={{ background: orange }}>
                   Świeży
@@ -145,9 +147,9 @@ export default function Example10() {
 
       {/* FEATURES — vintage cards */}
       <section className="bg-[#E8D8B5]">
-        <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mx-auto max-w-6xl px-6 py-12 md:py-20">
           <div className="flex flex-wrap items-end justify-between gap-6">
-            <RevealH2 className="text-5xl font-black uppercase tracking-tight md:text-7xl">
+            <RevealH2 className="text-4xl font-black uppercase tracking-tight md:text-7xl">
               Dlaczego my?
             </RevealH2>
             <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-black uppercase tracking-[0.25em]">
@@ -184,12 +186,12 @@ export default function Example10() {
       </section>
 
       {/* SERVICES */}
-      <section id="uslugi" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="uslugi" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
         <div className="text-center">
           <p className="text-xs font-black uppercase tracking-[0.4em]" style={{ color: orange }}>
             ✦ Cennik ✦
           </p>
-          <RevealH2 className="mt-3 text-5xl font-black uppercase tracking-tight md:text-7xl">
+          <RevealH2 className="mt-3 text-4xl font-black uppercase tracking-tight md:text-7xl">
             {services.title}
           </RevealH2>
         </div>
@@ -227,10 +229,10 @@ export default function Example10() {
       </section>
 
       {/* GALLERY */}
-      <section id="galeria" className="relative overflow-hidden py-20" style={{ background: orange }}>
+      <section id="galeria" className="relative overflow-hidden py-12 md:py-20" style={{ background: orange }}>
         <div className="mx-auto max-w-6xl px-6 text-[#F4E8D8]">
           <div className="flex flex-wrap items-end justify-between gap-6">
-            <RevealH2 className="text-5xl font-black uppercase tracking-tight md:text-7xl">Galeria</RevealH2>
+            <RevealH2 className="text-4xl font-black uppercase tracking-tight md:text-7xl">Galeria</RevealH2>
             <p className="font-bold uppercase tracking-wider">✦ Metamorfozy ✦</p>
           </div>
           <div className="mt-12 grid grid-cols-2 gap-5 md:grid-cols-4">
@@ -251,8 +253,8 @@ export default function Example10() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section id="opinie" className="mx-auto max-w-6xl px-6 py-20">
-        <RevealH2 className="text-center text-5xl font-black uppercase tracking-tight md:text-7xl">
+      <section id="opinie" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
+        <RevealH2 className="text-center text-4xl font-black uppercase tracking-tight md:text-7xl">
           Opinie
         </RevealH2>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -283,8 +285,8 @@ export default function Example10() {
 
       {/* FAQ */}
       <section id="faq" className="bg-[#E8D8B5]">
-        <div className="mx-auto max-w-3xl px-6 py-20">
-          <RevealH2 className="text-center text-5xl font-black uppercase tracking-tight md:text-7xl">FAQ</RevealH2>
+        <div className="mx-auto max-w-3xl px-6 py-12 md:py-20">
+          <RevealH2 className="text-center text-4xl font-black uppercase tracking-tight md:text-7xl">FAQ</RevealH2>
           <div className="mt-10 space-y-3">
             {faq.items.slice(0, 6).map((q, i) => (
               <RevealDetails
@@ -310,13 +312,13 @@ export default function Example10() {
 
       {/* CTA */}
       <section id="kontakt" className="bg-[#3D2C1C] text-[#F4E8D8]">
-        <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <div className="grid gap-12 md:grid-cols-12 md:items-center">
             <div className="md:col-span-7">
               <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-black uppercase tracking-[0.3em] text-[#3D2C1C]" style={{ background: mustard }}>
                 ✦ Special offer ✦
               </span>
-              <RevealH2 className="mt-6 text-5xl font-black uppercase leading-[0.95] tracking-tight md:text-7xl">
+              <RevealH2 className="mt-6 text-4xl font-black uppercase leading-[0.95] tracking-tight md:text-7xl">
                 Czas na wizytę
                 <br />
                 <span style={{ color: mustard }}>w salonie.</span>

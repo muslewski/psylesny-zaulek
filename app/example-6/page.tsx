@@ -23,12 +23,12 @@ export default function Example6() {
     <main className="min-h-dvh bg-[#FCF8F3] text-[#181512] [font-family:var(--font-serif)]">
       {/* NAV — magazine masthead */}
       <header className="border-b border-[#181512]/20">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 text-xs uppercase tracking-[0.25em]">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-6 py-4 text-[10px] uppercase tracking-[0.2em] sm:text-xs sm:tracking-[0.25em]">
           <span>Volume I · Wydanie 2026</span>
-          <span>Salon · Lifestyle · Pies</span>
+          <span className="hidden sm:inline">Salon · Lifestyle · Pies</span>
         </div>
         <div className="mx-auto max-w-6xl border-y border-[#181512]/20 px-6 py-6 text-center">
-          <RevealH1 className="text-5xl tracking-tight md:text-7xl">
+          <RevealH1 className="text-4xl tracking-tight md:text-7xl">
             <span className="italic">PsyLeśny</span> Zaułek
           </RevealH1>
         </div>
@@ -51,7 +51,7 @@ export default function Example6() {
             >
               {hero.eyebrow} · Reportaż
             </p>
-            <RevealH2 className="mt-6 text-6xl leading-[0.95] tracking-tight md:text-[7rem]">
+            <RevealH2 className="mt-6 text-5xl leading-[0.95] tracking-tight md:text-[7rem]">
               Sztuka <span className="italic" style={{ color: terracotta }}>pielęgnacji</span> psa.
             </RevealH2>
             <p className="mt-8 max-w-md text-lg leading-relaxed text-[#181512]/80 [font-family:var(--font-sans)]">
@@ -88,7 +88,7 @@ export default function Example6() {
 
       {/* ABOUT — three-column editorial */}
       <section id="salon" className="border-y border-[#181512]/20 bg-[#F4ECDD]">
-        <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mx-auto max-w-6xl px-6 py-12 md:py-20">
           <p className="text-xs uppercase tracking-[0.3em] [font-family:var(--font-sans)]" style={{ color: terracotta }}>
             O Salonie
           </p>
@@ -121,7 +121,7 @@ export default function Example6() {
       </section>
 
       {/* SERVICES — two-column index */}
-      <section id="uslugi" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="uslugi" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
         <div className="flex flex-wrap items-end justify-between border-b border-[#181512]/20 pb-6">
           <h3 className="text-4xl tracking-tight md:text-6xl">Cennik usług</h3>
           <p className="max-w-sm text-sm text-[#181512]/60 [font-family:var(--font-sans)]">
@@ -172,7 +172,7 @@ export default function Example6() {
       </section>
 
       {/* GALLERY */}
-      <section id="galeria" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="galeria" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
         <p className="text-xs uppercase tracking-[0.3em] [font-family:var(--font-sans)]" style={{ color: terracotta }}>
           Portfolio
         </p>
@@ -207,7 +207,7 @@ export default function Example6() {
 
       {/* TESTIMONIALS — letter to editor */}
       <section id="opinie" className="border-y border-[#181512]/20 bg-[#F4ECDD]">
-        <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mx-auto max-w-6xl px-6 py-12 md:py-20">
           <p className="text-xs uppercase tracking-[0.3em] [font-family:var(--font-sans)]" style={{ color: terracotta }}>
             Listy od czytelników
           </p>
@@ -232,7 +232,7 @@ export default function Example6() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="mx-auto max-w-3xl px-6 py-20">
+      <section id="faq" className="mx-auto max-w-3xl px-6 py-12 md:py-20">
         <p className="text-xs uppercase tracking-[0.3em] [font-family:var(--font-sans)]" style={{ color: terracotta }}>
           FAQ
         </p>
@@ -259,13 +259,13 @@ export default function Example6() {
 
       {/* CTA + Contact */}
       <section id="kontakt" className="border-y border-[#181512]/20 bg-[#181512] text-[#FCF8F3]">
-        <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <div className="grid gap-10 md:grid-cols-2 md:items-end">
             <div>
               <p className="text-xs uppercase tracking-[0.3em] [font-family:var(--font-sans)]" style={{ color: terracotta }}>
                 Kontakt redakcyjny
               </p>
-              <h3 className="mt-4 text-5xl tracking-tight md:text-7xl">
+              <h3 className="mt-4 text-4xl tracking-tight md:text-7xl">
                 Umów <span className="italic" style={{ color: terracotta }}>wizytę</span>.
               </h3>
               <p className="mt-6 max-w-md text-[#FCF8F3]/80 [font-family:var(--font-sans)]">

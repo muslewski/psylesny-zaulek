@@ -25,17 +25,18 @@ export default function Example5() {
     <main className="min-h-dvh bg-[#0A0A0A] text-[#F4EFE6] antialiased [font-family:var(--font-serif)]">
       {/* NAV */}
       <header className="border-b border-white/10">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-          <div className="text-xs uppercase tracking-[0.35em] text-white/70">Est. 2024</div>
-          <a href="#" className="text-xl tracking-[0.2em]">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-6">
+          <div className="hidden text-xs uppercase tracking-[0.35em] text-white/70 md:block">Est. 2024</div>
+          <a href="#" className="text-base tracking-[0.2em] sm:text-xl">
             PSYLEŚNY <span style={{ color: gold }}>·</span> ZAUŁEK
           </a>
           <a
             href={site.contact.phone.href}
-            className="hidden text-xs uppercase tracking-[0.3em] hover:text-white md:block"
+            className="text-xs uppercase tracking-[0.3em] hover:text-white"
             style={{ color: gold }}
           >
-            {site.contact.phone.display}
+            <span className="hidden md:inline">{site.contact.phone.display}</span>
+            <span className="md:hidden">Zadzwoń</span>
           </a>
         </div>
         <nav className="hidden border-t border-white/10 md:block">
@@ -55,11 +56,11 @@ export default function Example5() {
           <img src={dogs.labrador} alt="" className="h-full w-full object-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A] via-transparent to-[#0A0A0A]" />
         </div>
-        <div className="relative mx-auto max-w-5xl px-6 py-32 text-center md:py-48">
+        <div className="relative mx-auto max-w-5xl px-6 py-20 text-center md:py-48">
           <p className="text-xs uppercase tracking-[0.4em]" style={{ color: gold }}>
             {hero.eyebrow}
           </p>
-          <RevealH1 className="mx-auto mt-8 max-w-3xl text-5xl font-light leading-[1.05] tracking-tight md:text-7xl">
+          <RevealH1 className="mx-auto mt-8 max-w-3xl text-4xl font-light leading-[1.05] tracking-tight md:text-7xl">
             Profesjonalna{" "}
             <span className="italic" style={{ color: gold }}>pielęgnacja</span>
             <br />
@@ -97,7 +98,7 @@ export default function Example5() {
 
       {/* FEATURES */}
       <section className="border-y border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <div className="text-center">
             <p className="text-xs uppercase tracking-[0.4em]" style={{ color: gold }}>
               {features.eyebrow}
@@ -123,7 +124,7 @@ export default function Example5() {
 
       {/* SERVICES */}
       <section id="uslugi">
-        <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <div className="text-center">
             <p className="text-xs uppercase tracking-[0.4em]" style={{ color: gold }}>
               Cennik
@@ -171,7 +172,7 @@ export default function Example5() {
 
       {/* GALLERY */}
       <section id="galeria" className="border-y border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <div className="text-center">
             <p className="text-xs uppercase tracking-[0.4em]" style={{ color: gold }}>
               Galeria
@@ -230,7 +231,7 @@ export default function Example5() {
 
       {/* FAQ */}
       <section id="faq" className="border-y border-white/10">
-        <div className="mx-auto max-w-3xl px-6 py-24">
+        <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
           <div className="text-center">
             <p className="text-xs uppercase tracking-[0.4em]" style={{ color: gold }}>FAQ</p>
             <RevealH2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">
@@ -255,7 +256,7 @@ export default function Example5() {
 
       {/* CTA + Contact */}
       <section id="kontakt">
-        <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <div className="border p-12 text-center md:p-20" style={{ borderColor: gold }}>
             <p className="text-xs uppercase tracking-[0.4em]" style={{ color: gold }}>
               Czas na metamorfozę

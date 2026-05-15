@@ -117,7 +117,7 @@ export default function Example4() {
       <section className="border-y-4 border-black bg-white">
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-6">
           <div className="mb-8 flex items-end justify-between">
-            <RevealH2 className="text-5xl font-black uppercase tracking-tight md:text-7xl">
+            <RevealH2 className="text-4xl font-black uppercase tracking-tight md:text-7xl">
               Dlaczego my?
             </RevealH2>
             <p className="hidden max-w-xs text-sm font-bold uppercase md:block">
@@ -149,7 +149,7 @@ export default function Example4() {
       {/* SERVICES */}
       <section id="uslugi" className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24">
         <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
-          <RevealH2 className="text-5xl font-black uppercase tracking-tight md:text-7xl">
+          <RevealH2 className="text-4xl font-black uppercase tracking-tight md:text-7xl">
             Co robimy
           </RevealH2>
           <p className="max-w-sm border-l-4 border-black pl-4 text-sm font-bold">
@@ -195,7 +195,7 @@ export default function Example4() {
       {/* GALLERY */}
       <section id="galeria" className="border-y-4 border-black bg-[#FF3D7F]">
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24">
-          <RevealH2 className="text-5xl font-black uppercase tracking-tight md:text-7xl">
+          <RevealH2 className="text-4xl font-black uppercase tracking-tight md:text-7xl">
             Metamorfozy
           </RevealH2>
           <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
@@ -214,7 +214,7 @@ export default function Example4() {
 
       {/* TESTIMONIALS */}
       <section id="opinie" className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24">
-        <RevealH2 className="mb-12 text-5xl font-black uppercase tracking-tight md:text-7xl">
+        <RevealH2 className="mb-12 text-4xl font-black uppercase tracking-tight md:text-7xl">
           Opinie
         </RevealH2>
         <div className="grid gap-6 md:grid-cols-3">
@@ -240,7 +240,7 @@ export default function Example4() {
       {/* FAQ */}
       <section id="faq" className="border-y-4 border-black bg-white">
         <div className="mx-auto max-w-4xl px-4 py-16 md:px-6 md:py-24">
-          <RevealH2 className="text-5xl font-black uppercase tracking-tight md:text-7xl">FAQ</RevealH2>
+          <RevealH2 className="text-4xl font-black uppercase tracking-tight md:text-7xl">FAQ</RevealH2>
           <div className="mt-10 divide-y-4 divide-black border-y-4 border-black">
             {faq.items.slice(0, 6).map((q, i) => (
               <RevealDetails key={i} className="group">
@@ -261,7 +261,7 @@ export default function Example4() {
           <div className="grid gap-10 md:grid-cols-2 md:items-end">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.3em]">Kontakt</p>
-              <RevealH2 className="mt-4 text-6xl font-black uppercase leading-[0.9] tracking-tight md:text-8xl">
+              <RevealH2 className="mt-4 text-5xl font-black uppercase leading-[0.9] tracking-tight md:text-8xl">
                 Zadzwoń.<br />
                 <span className="italic">teraz.</span>
               </RevealH2>

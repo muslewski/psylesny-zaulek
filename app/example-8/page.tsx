@@ -65,7 +65,7 @@ export default function Example8() {
               <span className="h-px w-10" style={{ background: moss }} />
               {hero.eyebrow}
             </p>
-            <RevealH1 className="mt-6 text-5xl leading-[1.05] tracking-tight md:text-7xl [font-family:var(--font-serif)]">
+            <RevealH1 className="mt-6 text-4xl leading-[1.05] tracking-tight md:text-7xl [font-family:var(--font-serif)]">
               W leśnej, <em className="italic">spokojnej</em> atmosferze.
             </RevealH1>
             <p className="mt-6 max-w-md text-lg text-[#1F3A2D]/80">
@@ -120,7 +120,7 @@ export default function Example8() {
 
       {/* FEATURES */}
       <section className="border-y border-[#1F3A2D]/15" style={{ background: forest, color: paper }}>
-        <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <div className="grid gap-12 md:grid-cols-12">
             <div className="md:col-span-4">
               <p className="text-xs uppercase tracking-[0.3em] opacity-70">{features.eyebrow}</p>
@@ -150,7 +150,7 @@ export default function Example8() {
       </section>
 
       {/* SERVICES */}
-      <section id="uslugi" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="uslugi" className="mx-auto max-w-6xl px-6 py-16 md:py-24">
         <div className="text-center">
           <p className="text-xs uppercase tracking-[0.3em]" style={{ color: moss }}>
             {services.eyebrow}
@@ -194,7 +194,7 @@ export default function Example8() {
 
       {/* GALLERY */}
       <section id="galeria" className="bg-[#EBE0C5]">
-        <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <RevealH2 className="text-4xl tracking-tight md:text-5xl [font-family:var(--font-serif)]">
               Galeria realizacji
@@ -219,7 +219,7 @@ export default function Example8() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section id="opinie" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="opinie" className="mx-auto max-w-6xl px-6 py-16 md:py-24">
         <div className="grid gap-12 md:grid-cols-12 md:items-center">
           <div className="md:col-span-4">
             <p className="text-xs uppercase tracking-[0.3em]" style={{ color: moss }}>Opinie</p>
@@ -256,7 +256,7 @@ export default function Example8() {
 
       {/* FAQ */}
       <section id="faq" className="border-y border-[#1F3A2D]/15 bg-[#EBE0C5]">
-        <div className="mx-auto max-w-3xl px-6 py-24">
+        <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
           <div className="text-center">
             <p className="text-xs uppercase tracking-[0.3em]" style={{ color: moss }}>Pytania</p>
             <RevealH2 className="mt-3 text-4xl tracking-tight md:text-5xl [font-family:var(--font-serif)]">
@@ -282,11 +282,11 @@ export default function Example8() {
 
       {/* CTA + Contact */}
       <section id="kontakt" className="text-[#F5EDDC]" style={{ background: forest }}>
-        <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <div>
               <p className="text-xs uppercase tracking-[0.3em] opacity-70">Kontakt</p>
-              <RevealH2 className="mt-4 text-5xl tracking-tight md:text-7xl [font-family:var(--font-serif)]">
+              <RevealH2 className="mt-4 text-4xl tracking-tight md:text-7xl [font-family:var(--font-serif)]">
                 Umów <em className="italic">wizytę</em>.
               </RevealH2>
               <p className="mt-6 max-w-md opacity-85">

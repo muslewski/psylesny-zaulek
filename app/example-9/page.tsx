@@ -61,7 +61,7 @@ export default function Example9() {
               <span className="size-1.5 rounded-full" style={{ background: coral }} />
               {hero.eyebrow}
             </span>
-            <RevealH1 className="mt-8 text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
+            <RevealH1 className="mt-8 text-4xl font-bold leading-[1.05] tracking-tight md:text-7xl">
               Spokojna pielęgnacja{" "}
               <span style={{ color: coral }}>bez stresu</span>.
             </RevealH1>
@@ -106,7 +106,7 @@ export default function Example9() {
       </section>
 
       {/* FEATURES */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      <section className="mx-auto max-w-6xl px-6 py-12 md:py-20">
         <div className="text-center">
           <p className="text-xs uppercase tracking-[0.3em]" style={{ color: coral }}>
             {features.eyebrow}
@@ -127,7 +127,7 @@ export default function Example9() {
       </section>
 
       {/* SERVICES */}
-      <section id="uslugi" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="uslugi" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
         <div className="text-center">
           <RevealH2 className="text-4xl font-bold tracking-tight md:text-5xl">{services.title}</RevealH2>
           <p className="mx-auto mt-3 max-w-md text-sm text-[#3A3633]/70">{services.priceNote}</p>
@@ -164,7 +164,7 @@ export default function Example9() {
       </section>
 
       {/* GALLERY */}
-      <section id="galeria" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="galeria" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
         <RevealH2 className="text-center text-4xl font-bold tracking-tight md:text-5xl">Galeria</RevealH2>
         <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-3">
           {galleryImages(6).map((src, i) => (
@@ -178,7 +178,7 @@ export default function Example9() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section id="opinie" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="opinie" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
         <RevealH2 className="text-center text-4xl font-bold tracking-tight md:text-5xl">Opinie</RevealH2>
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {testimonials.items.slice(0, 2).map((t) => (
@@ -202,7 +202,7 @@ export default function Example9() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="mx-auto max-w-3xl px-6 py-20">
+      <section id="faq" className="mx-auto max-w-3xl px-6 py-12 md:py-20">
         <RevealH2 className="text-center text-4xl font-bold tracking-tight md:text-5xl">{faq.title}</RevealH2>
         <div className="mt-12 space-y-3">
           {faq.items.slice(0, 6).map((q, i) => (
@@ -220,7 +220,7 @@ export default function Example9() {
       </section>
 
       {/* CTA */}
-      <section id="kontakt" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="kontakt" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
         <div className={`rounded-[2.5rem] ${base} p-10 ${out} md:p-16`}>
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <div>

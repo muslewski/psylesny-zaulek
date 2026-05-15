@@ -55,7 +55,8 @@ export default function Example7() {
             href={site.contact.phone.href}
             className="rounded-full bg-[#3A2C2A] px-4 py-2 text-sm font-bold text-white"
           >
-            ☎ {site.contact.phone.display}
+            <span className="hidden sm:inline">☎ {site.contact.phone.display}</span>
+            <span className="sm:hidden">☎ Zadzwoń</span>
           </a>
         </div>
       </header>
@@ -71,7 +72,7 @@ export default function Example7() {
             <span className="inline-flex items-center gap-2 rounded-full border-2 border-[#3A2C2A] bg-[#C8E6C9] px-3 py-1.5 text-xs font-bold uppercase">
               ★ {hero.eyebrow}
             </span>
-            <RevealH1 className="mt-6 text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
+            <RevealH1 className="mt-6 text-4xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
               Pies wraca{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">szczęśliwy</span>
@@ -126,7 +127,7 @@ export default function Example7() {
 
       {/* FEATURES */}
       <section className="bg-[#FFB8D1]">
-        <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mx-auto max-w-6xl px-6 py-12 md:py-20">
           <div className="text-center">
             <p className="text-xs font-bold uppercase tracking-widest">{features.eyebrow}</p>
             <RevealH2 className="mt-3 text-4xl font-extrabold tracking-tight md:text-6xl">
@@ -155,7 +156,7 @@ export default function Example7() {
       </section>
 
       {/* SERVICES */}
-      <section id="uslugi" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="uslugi" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
         <div className="text-center">
           <RevealH2 className="text-4xl font-extrabold tracking-tight md:text-6xl">
             {services.title}
@@ -200,7 +201,7 @@ export default function Example7() {
       {/* GALLERY */}
       <section id="galeria" className="bg-[#DCC4F2]">
         <Wave color="#DCC4F2" />
-        <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mx-auto max-w-6xl px-6 py-12 md:py-20">
           <div className="text-center">
             <RevealH2 className="text-4xl font-extrabold tracking-tight md:text-6xl">Galeria</RevealH2>
             <p className="mt-3">Metamorfozy naszych podopiecznych ✂️</p>
@@ -223,7 +224,7 @@ export default function Example7() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section id="opinie" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="opinie" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
         <RevealH2 className="text-center text-4xl font-extrabold tracking-tight md:text-6xl">
           Co mówią właściciele
         </RevealH2>
@@ -258,7 +259,7 @@ export default function Example7() {
       {/* FAQ */}
       <section id="faq" className="bg-[#C8E6C9]">
         <Wave color="#C8E6C9" />
-        <div className="mx-auto max-w-3xl px-6 py-20">
+        <div className="mx-auto max-w-3xl px-6 py-12 md:py-20">
           <RevealH2 className="text-center text-4xl font-extrabold tracking-tight md:text-6xl">FAQ</RevealH2>
           <div className="mt-10 space-y-3">
             {faq.items.slice(0, 6).map((q, i) => (
@@ -279,7 +280,7 @@ export default function Example7() {
       </section>
 
       {/* CTA */}
-      <section id="kontakt" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="kontakt" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
         <div className="relative overflow-hidden rounded-[2.5rem] border-2 border-[#3A2C2A] bg-[#3A2C2A] p-8 text-white shadow-[8px_8px_0_0_#FFB8D1] md:p-14">
           <div className="absolute -bottom-10 -right-10 size-48 rounded-full bg-[#FFB8D1] opacity-30 blur-2xl" />
           <div className="relative grid gap-10 md:grid-cols-2 md:items-center">
