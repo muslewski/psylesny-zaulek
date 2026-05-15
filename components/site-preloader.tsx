@@ -70,12 +70,15 @@ export function SitePreloader({
   iconSize = 56,
   hideIcon = false,
 }: SitePreloaderProps) {
+  // IMPORTANT: `loading` starts true so the preloader is part of the SSR
+  // HTML — that way the first paint is the preloader, not the page content.
+  // Don't gate on a `mounted` flag here: that would suppress the SSR render
+  // and let page content flash before hydration. (This is what liceum7bydgoszcz
+  // does too.)
   const [loading, setLoading] = useState(true);
-  const [mounted, setMounted] = useState(false);
   const [skip, setSkip] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
     let alreadySeen = false;
     try {
       alreadySeen = sessionStorage.getItem(storageKey) === STORAGE_VALUE;
@@ -98,10 +101,10 @@ export function SitePreloader({
     return () => window.clearTimeout(id);
   }, [storageKey, duration]);
 
-  // Skip render entirely if already seen this session
-  if (mounted && skip) return null;
-  // Hide before mount to avoid SSR / hydration mismatch around sessionStorage
-  if (!mounted) return null;
+  // After hydration, if we'd already seen the preloader this session, drop
+  // the whole tree. The brief SSR paint is acceptable — much less jarring
+  // than letting the full page content flash before the preloader.
+  if (skip) return null;
 
   return (
     <>
