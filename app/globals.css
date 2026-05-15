@@ -1,10 +1,16 @@
 @import "tailwindcss";
 
+/*
+ * Font CSS variables (`--font-sans`, `--font-serif`, `--font-mono`) are set
+ * on `<html>` by next/font (see lib/fonts.ts). The @theme stacks below are
+ * fallbacks only — they kick in if the className fails to apply (e.g.
+ * very early paint, JS disabled) so type still renders, just with system
+ * fonts instead of Geist/Fraunces.
+ */
 @theme {
-  --font-sans: "Geist", "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-serif: "Fraunces", "Playfair Display", ui-serif, Georgia, serif;
-  --font-mono: ui-monospace, "Geist Mono", Menlo, Consolas, monospace;
-  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, Menlo, Consolas, "Courier New", monospace;
 }
 
 html, body {

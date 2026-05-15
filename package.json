@@ -8,6 +8,17 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "iOS >= 14",
+    "Safari >= 14",
+    "Chrome >= 90",
+    "Firefox >= 90",
+    "Edge >= 90"
+  ],
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
