@@ -10,6 +10,7 @@ import {
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
 import { SitePreloader } from "@/components/site-preloader";
+import { HeroImage } from "@/components/hero-image";
 
 /* ── EXAMPLE 9 — Neumorphism Soft ────────────────────────────────────────────
    Palette: warm grey #E8E4DC base, accent coral #E89A7C, ink #3A3633
@@ -113,7 +114,7 @@ export default function Example9() {
           <div className="md:col-span-5">
             <div className={`rounded-[2.5rem] ${base} p-4 ${out}`}>
               <div className={`overflow-hidden rounded-[2rem] ${inn}`}>
-                <RevealImg src={dogs.petsGroup} alt="" className="aspect-[4/5] w-full object-cover" />
+                <HeroImage src={dogs.petsGroup} alt="" className="aspect-[4/5] w-full object-cover" />
               </div>
             </div>
           </div>

@@ -43,10 +43,32 @@ html, body {
 }
 .animate-blob { animation: blob 18s ease-in-out infinite; }
 
+/*
+ * Hero image zoom — the wrapper around a hero image starts slightly
+ * scaled up + blurred and decays to its resting state over ~2.2s.
+ * Runs independently from the image's onLoad fade, so a cached image
+ * still gets the zoom and a slow image still gets the zoom (it just
+ * fades in mid-decay). Pattern adapted from liceum7bydgoszcz.
+ */
+@keyframes hero-zoom {
+  0% {
+    transform: scale(1.18);
+    filter: blur(12px);
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+.animate-hero-zoom {
+  animation: hero-zoom 2.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee,
   .animate-gradient,
-  .animate-blob {
+  .animate-blob,
+  .animate-hero-zoom {
     animation: none;
   }
 }

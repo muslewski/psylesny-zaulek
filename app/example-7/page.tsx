@@ -10,6 +10,7 @@ import {
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
 import { SitePreloader } from "@/components/site-preloader";
+import { HeroImage } from "@/components/hero-image";
 
 /* ── EXAMPLE 7 — Playful Pastel ──────────────────────────────────────────────
    Palette: butter #FFF7C2, mint #C8E6C9, peach #FFCFA2, lilac #DCC4F2, candy pink #FFB8D1
@@ -127,9 +128,12 @@ export default function Example7() {
 
           <div className="relative">
             <div className="absolute inset-0 rotate-3 rounded-[2.5rem] bg-[#FFB8D1]" />
-            <div className="relative overflow-hidden rounded-[2.5rem] border-4 border-[#3A2C2A] shadow-[8px_8px_0_0_#3A2C2A]">
-              <RevealImg src={dogs.dogSmile} alt="" className="aspect-[4/5] w-full object-cover" />
-            </div>
+            <HeroImage
+              src={dogs.dogSmile}
+              alt=""
+              wrapperClassName="relative rounded-[2.5rem] border-4 border-[#3A2C2A] shadow-[8px_8px_0_0_#3A2C2A]"
+              className="aspect-[4/5] w-full object-cover"
+            />
             <div className="absolute -bottom-6 -left-4 rotate-[-6deg] rounded-2xl border-2 border-[#3A2C2A] bg-white px-4 py-3 shadow-[4px_4px_0_0_#3A2C2A]">
               <div className="flex items-center gap-1 text-amber-500">
                 {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} size={14} />)}

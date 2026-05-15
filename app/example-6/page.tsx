@@ -7,6 +7,7 @@ import {
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
 import { SitePreloader } from "@/components/site-preloader";
+import { HeroImage } from "@/components/hero-image";
 
 /* ── EXAMPLE 6 — Editorial / Magazine ────────────────────────────────────────
    Palette: paper #FCF8F3, ink #181512, terracotta #B85C38, sage #6B8459
@@ -96,9 +97,7 @@ export default function Example6() {
 
           <div className="md:col-span-5">
             <RevealFigure>
-              <div className="overflow-hidden">
-                <RevealImg src={dogs.dogBlanket} alt="" className="aspect-[3/4] w-full object-cover" />
-              </div>
+              <HeroImage src={dogs.dogBlanket} alt="" className="aspect-[3/4] w-full object-cover" />
               <figcaption className="mt-3 border-t border-[#181512]/30 pt-2 text-xs uppercase tracking-[0.2em] text-[#181512]/60 [font-family:var(--font-sans)]">
                 Fot. {site.name} · po wizycie
               </figcaption>

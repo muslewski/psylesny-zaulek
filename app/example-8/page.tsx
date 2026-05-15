@@ -10,6 +10,7 @@ import {
   RevealDetails, RevealFigure, RevealArticle, RevealLi,
 } from "@/components/motion-wrappers";
 import { SitePreloader } from "@/components/site-preloader";
+import { HeroImage } from "@/components/hero-image";
 
 /* ── EXAMPLE 8 — Forest / Organic Nature ─────────────────────────────────────
    Palette: deep forest #1F3A2D, moss #4A6741, sage #91B091, paper #F5EDDC, bark #3D2C1C
@@ -110,10 +111,11 @@ export default function Example8() {
 
           <div className="relative md:col-span-5">
             <div className="absolute -inset-4 rounded-[60%_40%_60%_40%/40%_60%_50%_50%]" style={{ background: moss }} />
-            <RevealImg
+            <HeroImage
               src={dogs.puppy}
               alt=""
-              className="relative aspect-[3/4] w-full rounded-[60%_40%_60%_40%/40%_60%_50%_50%] object-cover"
+              wrapperClassName="relative rounded-[60%_40%_60%_40%/40%_60%_50%_50%]"
+              className="aspect-[3/4] w-full object-cover"
             />
             <div className="absolute -bottom-6 -right-2 rounded-3xl border border-[#1F3A2D]/15 bg-[#F5EDDC] p-4 shadow-lg">
               <div className="flex items-center gap-3">

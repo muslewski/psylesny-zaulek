@@ -9,6 +9,7 @@ import {
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
 import { SitePreloader } from "@/components/site-preloader";
+import { HeroImage } from "@/components/hero-image";
 
 /* ── EXAMPLE 4 — Brutalism ───────────────────────────────────────────────────
    Palette: yellow #FFE600, hot pink #FF3D7F, black #0A0A0A, white
@@ -116,7 +117,7 @@ export default function Example4() {
 
           <div className="md:col-span-5">
             <div className={`relative ${block} ${dropShadow}`}>
-              <RevealImg src={dogs.husky} alt="" className="aspect-[4/5] w-full object-cover" />
+              <HeroImage src={dogs.husky} alt="" className="aspect-[4/5] w-full object-cover" />
               <div className="absolute -bottom-4 -right-4 rotate-3 border-4 border-black bg-[#FF3D7F] px-4 py-2 text-sm font-black uppercase text-black">
                 ★ 5/5 opinii
               </div>

@@ -10,6 +10,7 @@ import {
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
 import { SitePreloader } from "@/components/site-preloader";
+import { HeroImage } from "@/components/hero-image";
 
 /* ── EXAMPLE 2 — Bento Grid ──────────────────────────────────────────────────
    Palette: cream #FFF7EE, mint #DCEEDB, peach #FFD9B7, lilac #E0DAFF, ink #1A1A1A
@@ -93,9 +94,12 @@ export default function Example2() {
           </div>
 
           {/* Hero photo */}
-          <div className="col-span-6 overflow-hidden rounded-3xl md:col-span-2 md:row-span-2">
-            <RevealImg src={dogs.groomedDog} alt="" className="h-full w-full object-cover" />
-          </div>
+          <HeroImage
+            src={dogs.groomedDog}
+            alt=""
+            wrapperClassName="col-span-6 rounded-3xl md:col-span-2 md:row-span-2"
+            className="h-full w-full object-cover"
+          />
 
           {/* Phone tile */}
           <a

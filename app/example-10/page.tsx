@@ -10,6 +10,7 @@ import {
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
 import { SitePreloader } from "@/components/site-preloader";
+import { HeroImage } from "@/components/hero-image";
 
 /* ── EXAMPLE 10 — Retro 70s / Y2K Vintage ────────────────────────────────────
    Palette: cream #F4E8D8, burnt orange #C75A3F, mustard #D4A03C, brown #3D2C1C, cream-200 #E8D8B5
@@ -127,10 +128,11 @@ export default function Example10() {
 
             <div className="relative">
               <div className="absolute -inset-6 rounded-[40%_60%_40%_60%/60%_40%_60%_40%]" style={{ background: mustard }} />
-              <RevealImg
+              <HeroImage
                 src="https://placedog.net/1200/1200?id=42"
                 alt=""
-                className="relative aspect-square w-full rounded-[40%_60%_40%_60%/60%_40%_60%_40%] object-cover"
+                wrapperClassName="relative rounded-[40%_60%_40%_60%/60%_40%_60%_40%]"
+                className="aspect-square w-full object-cover"
               />
               {/* Circular stamp badge */}
               <div className="absolute -bottom-8 -right-4 grid size-32 place-items-center rounded-full text-[#F4E8D8] md:-right-12 md:size-40" style={{ background: orange }}>
