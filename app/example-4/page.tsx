@@ -8,6 +8,7 @@ import {
   StaggerGrid, StaggerItem,
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
+import { SitePreloader } from "@/components/site-preloader";
 
 /* ── EXAMPLE 4 — Brutalism ───────────────────────────────────────────────────
    Palette: yellow #FFE600, hot pink #FF3D7F, black #0A0A0A, white
@@ -22,6 +23,15 @@ export default function Example4() {
   const { site, hero, services, features, faq, testimonials } = content;
 
   return (
+    <>
+      <SitePreloader
+        storageKey="psylesny:ex4"
+        variant="curtain"
+        duration={1400}
+        bgColor="#0A0A0A"
+        brandClassName="text-4xl md:text-6xl font-black uppercase tracking-tight text-[#FFE600]"
+        taglineClassName="text-xs uppercase tracking-[0.3em] font-bold text-[#FFE600]/80"
+      />
     <main className="min-h-dvh bg-[#FFE600] text-black [font-feature-settings:'ss01']">
       {/* NAV */}
       <header className="border-b-4 border-black">
@@ -294,5 +304,6 @@ export default function Example4() {
         </div>
       </footer>
     </main>
+    </>
   );
 }

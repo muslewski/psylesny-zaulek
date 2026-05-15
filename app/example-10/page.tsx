@@ -9,6 +9,7 @@ import {
   StaggerGrid, StaggerItem,
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
+import { SitePreloader } from "@/components/site-preloader";
 
 /* ── EXAMPLE 10 — Retro 70s / Y2K Vintage ────────────────────────────────────
    Palette: cream #F4E8D8, burnt orange #C75A3F, mustard #D4A03C, brown #3D2C1C, cream-200 #E8D8B5
@@ -36,6 +37,17 @@ export default function Example10() {
   const { site, hero, services, features, faq, testimonials } = content;
 
   return (
+    <>
+      <SitePreloader
+        storageKey="psylesny:ex10"
+        variant="stairs"
+        duration={1500}
+        bgColor="#3D2C1C"
+        brandClassName="text-4xl md:text-6xl font-black uppercase tracking-tight text-[#F4E8D8]"
+        taglineClassName="text-xs uppercase tracking-[0.3em] font-bold text-[#D4A03C]"
+        stairCount={8}
+        stairsRevealFrom="left"
+      />
     <main className="min-h-dvh bg-[#F4E8D8] text-[#3D2C1C] [font-feature-settings:'ss01']">
       {/* NAV */}
       <header className="border-b-2 border-dashed" style={{ borderColor: brown }}>
@@ -368,5 +380,6 @@ export default function Example10() {
         </div>
       </footer>
     </main>
+    </>
   );
 }

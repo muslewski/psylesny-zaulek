@@ -9,6 +9,7 @@ import {
   StaggerGrid, StaggerItem,
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
+import { SitePreloader } from "@/components/site-preloader";
 
 /* ── EXAMPLE 7 — Playful Pastel ──────────────────────────────────────────────
    Palette: butter #FFF7C2, mint #C8E6C9, peach #FFCFA2, lilac #DCC4F2, candy pink #FFB8D1
@@ -34,6 +35,17 @@ export default function Example7() {
   const { site, hero, services, features, faq, testimonials } = content;
 
   return (
+    <>
+      <SitePreloader
+        storageKey="psylesny:ex7"
+        variant="stairs"
+        duration={1400}
+        bgColor="#FFB8D1"
+        brandClassName="text-4xl md:text-6xl font-extrabold tracking-tight text-[#3A2C2A]"
+        taglineClassName="text-xs uppercase tracking-[0.3em] font-bold text-[#3A2C2A]/70"
+        stairCount={6}
+        stairsRevealFrom="center"
+      />
     <main className="min-h-dvh bg-[#FFF7C2] text-[#3A2C2A]">
       {/* NAV */}
       <header className="mx-auto max-w-6xl px-4 pt-6 md:px-6">
@@ -328,5 +340,6 @@ export default function Example7() {
         © {new Date().getFullYear()} {site.name} · zrobione z miłością do psów 🐾
       </footer>
     </main>
+    </>
   );
 }

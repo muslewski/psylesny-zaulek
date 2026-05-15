@@ -9,6 +9,7 @@ import {
   StaggerGrid, StaggerItem,
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
+import { SitePreloader } from "@/components/site-preloader";
 
 /* ── EXAMPLE 9 — Neumorphism Soft ────────────────────────────────────────────
    Palette: warm grey #E8E4DC base, accent coral #E89A7C, ink #3A3633
@@ -26,6 +27,15 @@ export default function Example9() {
   const { site, hero, services, features, faq, testimonials } = content;
 
   return (
+    <>
+      <SitePreloader
+        storageKey="psylesny:ex9"
+        variant="circle"
+        duration={1400}
+        bgColor="#E8E4DC"
+        brandClassName="text-4xl md:text-5xl font-bold tracking-tight text-[#3A3633]"
+        taglineClassName="text-[10px] uppercase tracking-[0.4em] font-medium text-[#E89A7C]"
+      />
     <main className={`min-h-dvh ${base} text-[#3A3633]`}>
       {/* NAV */}
       <header className="mx-auto max-w-6xl px-6 pt-6">
@@ -268,5 +278,6 @@ export default function Example9() {
         © {new Date().getFullYear()} {site.name}
       </footer>
     </main>
+    </>
   );
 }

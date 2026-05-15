@@ -9,6 +9,7 @@ import {
   StaggerGrid, StaggerItem, StaggerUl, StaggerLi,
   RevealDetails, RevealFigure, RevealArticle, RevealLi,
 } from "@/components/motion-wrappers";
+import { SitePreloader } from "@/components/site-preloader";
 
 /* ── EXAMPLE 8 — Forest / Organic Nature ─────────────────────────────────────
    Palette: deep forest #1F3A2D, moss #4A6741, sage #91B091, paper #F5EDDC, bark #3D2C1C
@@ -31,6 +32,15 @@ export default function Example8() {
   const { site, hero, services, features, faq, testimonials } = content;
 
   return (
+    <>
+      <SitePreloader
+        storageKey="psylesny:ex8"
+        variant="slide"
+        duration={1500}
+        bgColor="#1F3A2D"
+        brandClassName="text-4xl md:text-6xl tracking-tight text-[#F5EDDC] [font-family:var(--font-serif)]"
+        taglineClassName="text-[10px] uppercase tracking-[0.4em] font-medium text-[#91B091]"
+      />
     <main className="min-h-dvh bg-[#F5EDDC] text-[#1F3A2D] [font-family:var(--font-sans)]">
       {/* NAV */}
       <header className="border-b border-[#1F3A2D]/15">
@@ -346,5 +356,6 @@ export default function Example8() {
         </div>
       </footer>
     </main>
+    </>
   );
 }

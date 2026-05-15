@@ -9,6 +9,7 @@ import {
   StaggerGrid, StaggerItem,
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
+import { SitePreloader } from "@/components/site-preloader";
 
 /* ── EXAMPLE 5 — Dark Luxury ─────────────────────────────────────────────────
    Palette: ink #0A0A0A, paper #F4EFE6, gold #C9A55A, copper #B5784F
@@ -22,6 +23,15 @@ export default function Example5() {
   const { site, hero, services, features, faq, testimonials } = content;
 
   return (
+    <>
+      <SitePreloader
+        storageKey="psylesny:ex5"
+        variant="slide"
+        duration={1600}
+        bgColor="#0A0A0A"
+        brandClassName="text-3xl md:text-5xl font-light tracking-[0.15em] uppercase text-[#F4EFE6] [font-family:var(--font-serif)]"
+        taglineClassName="text-[10px] uppercase tracking-[0.4em] font-medium text-[#C9A55A]"
+      />
     <main className="min-h-dvh bg-[#0A0A0A] text-[#F4EFE6] antialiased [font-family:var(--font-serif)]">
       {/* NAV */}
       <header className="border-b border-white/10">
@@ -310,5 +320,6 @@ export default function Example5() {
         </div>
       </footer>
     </main>
+    </>
   );
 }

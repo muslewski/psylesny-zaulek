@@ -9,6 +9,7 @@ import {
   StaggerGrid, StaggerItem,
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
+import { SitePreloader } from "@/components/site-preloader";
 
 /* ── EXAMPLE 2 — Bento Grid ──────────────────────────────────────────────────
    Palette: cream #FFF7EE, mint #DCEEDB, peach #FFD9B7, lilac #E0DAFF, ink #1A1A1A
@@ -20,6 +21,17 @@ export default function Example2() {
   const { site, hero, services, features, faq, testimonials, gallery } = content;
 
   return (
+    <>
+      <SitePreloader
+        storageKey="psylesny:ex2"
+        variant="stairs"
+        duration={1400}
+        bgColor="#1A1A1A"
+        brandClassName="text-4xl md:text-6xl font-bold tracking-tight text-white"
+        taglineClassName="text-[10px] uppercase tracking-[0.4em] font-medium text-white/60"
+        stairCount={8}
+        stairsRevealFrom="center"
+      />
     <main className="min-h-dvh bg-[#FFF7EE] text-neutral-900">
       {/* NAV */}
       <header className="sticky top-0 z-20 backdrop-blur">
@@ -305,5 +317,6 @@ export default function Example2() {
         </div>
       </footer>
     </main>
+    </>
   );
 }

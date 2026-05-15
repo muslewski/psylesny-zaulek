@@ -6,6 +6,7 @@ import {
   StaggerGrid, StaggerItem,
   RevealDetails, RevealFigure, RevealArticle,
 } from "@/components/motion-wrappers";
+import { SitePreloader } from "@/components/site-preloader";
 
 /* ── EXAMPLE 6 — Editorial / Magazine ────────────────────────────────────────
    Palette: paper #FCF8F3, ink #181512, terracotta #B85C38, sage #6B8459
@@ -20,6 +21,23 @@ export default function Example6() {
   const { site, hero, services, features, faq, testimonials, about } = content;
 
   return (
+    <>
+      <SitePreloader
+        storageKey="psylesny:ex6"
+        variant="curtain"
+        duration={1500}
+        bgColor="#181512"
+        brand={
+          <div className="flex flex-col items-center gap-4 px-6 text-center">
+            <span className="text-4xl md:text-6xl tracking-tight text-[#FCF8F3] [font-family:var(--font-serif)]">
+              <span className="italic">PsyLeśny</span> Zaułek
+            </span>
+            <span className="text-[10px] uppercase tracking-[0.4em] font-medium text-[#B85C38] [font-family:var(--font-sans)]">
+              Volume I · Salon groomerski
+            </span>
+          </div>
+        }
+      />
     <main className="min-h-dvh bg-[#FCF8F3] text-[#181512] [font-family:var(--font-serif)]">
       {/* NAV — magazine masthead */}
       <header className="border-b border-[#181512]/20">
@@ -299,5 +317,6 @@ export default function Example6() {
         <p>End of Issue</p>
       </footer>
     </main>
+    </>
   );
 }
