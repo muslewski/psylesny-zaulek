@@ -14,6 +14,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Preloader, {
   type PreloaderProps,
 } from "@/components/react-bits/preloader";
+import { PawIcon } from "@/lib/icons";
 
 export interface SitePreloaderProps {
   /** Session storage key — give each example a unique value */
@@ -39,6 +40,14 @@ export interface SitePreloaderProps {
   taglineClassName?: string;
   /** Replace the whole brand block (overrides brandName/tagline) */
   brand?: ReactNode;
+  /** Custom icon node (defaults to PawIcon) */
+  icon?: ReactNode;
+  /** Fill color of the default paw icon */
+  iconColor?: string;
+  /** Pixel size of the default paw icon */
+  iconSize?: number;
+  /** Skip rendering the icon entirely */
+  hideIcon?: boolean;
 }
 
 const HOLD_DEFAULT = 1500;
@@ -56,6 +65,10 @@ export function SitePreloader({
   brandClassName = "text-4xl md:text-5xl font-bold tracking-tight",
   taglineClassName = "text-[10px] uppercase tracking-[0.4em] font-medium opacity-70",
   brand,
+  icon,
+  iconColor,
+  iconSize = 56,
+  hideIcon = false,
 }: SitePreloaderProps) {
   const [loading, setLoading] = useState(true);
   const [mounted, setMounted] = useState(false);
@@ -104,6 +117,7 @@ export function SitePreloader({
         respectReducedMotion
         reducedMotionFallback="fade"
         ariaLabel="Ładowanie strony"
+        loadingText=""
       />
       <AnimatePresence>
         {loading && (
@@ -121,11 +135,20 @@ export function SitePreloader({
             aria-hidden
           >
             {brand ?? (
-              <div className="flex flex-col items-center gap-3 text-center">
-                <span className={brandClassName}>{brandName}</span>
-                {tagline ? (
-                  <span className={taglineClassName}>{tagline}</span>
-                ) : null}
+              <div className="flex flex-col items-center gap-5 text-center">
+                {hideIcon ? null : (
+                  <div aria-hidden>
+                    {icon ?? (
+                      <PawIcon size={iconSize} style={{ color: iconColor }} />
+                    )}
+                  </div>
+                )}
+                <div className="flex flex-col items-center gap-3">
+                  <span className={brandClassName}>{brandName}</span>
+                  {tagline ? (
+                    <span className={taglineClassName}>{tagline}</span>
+                  ) : null}
+                </div>
               </div>
             )}
           </motion.div>

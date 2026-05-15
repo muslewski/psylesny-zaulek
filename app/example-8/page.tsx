@@ -38,6 +38,8 @@ export default function Example8() {
         variant="slide"
         duration={1500}
         bgColor="#1F3A2D"
+        iconColor="#91B091"
+        iconSize={52}
         brandClassName="text-4xl md:text-6xl tracking-tight text-[#F5EDDC] [font-family:var(--font-serif)]"
         taglineClassName="text-[10px] uppercase tracking-[0.4em] font-medium text-[#91B091]"
       />

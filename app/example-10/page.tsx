@@ -43,6 +43,11 @@ export default function Example10() {
         variant="stairs"
         duration={1500}
         bgColor="#3D2C1C"
+        icon={
+          <div className="grid size-16 -rotate-12 place-items-center rounded-full bg-[#C75A3F]">
+            <PawIcon size={30} className="text-[#F4E8D8]" />
+          </div>
+        }
         brandClassName="text-4xl md:text-6xl font-black uppercase tracking-tight text-[#F4E8D8]"
         taglineClassName="text-xs uppercase tracking-[0.3em] font-bold text-[#D4A03C]"
         stairCount={8}

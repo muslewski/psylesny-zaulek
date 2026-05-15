@@ -1,6 +1,6 @@
 import { content } from "@/lib/content";
 import { dogs, galleryImages } from "@/lib/images";
-import { PhoneIcon, MailIcon, FacebookIcon, ArrowRightIcon, StarIcon, Icon } from "@/lib/icons";
+import { PhoneIcon, MailIcon, FacebookIcon, ArrowRightIcon, StarIcon, Icon, PawIcon } from "@/lib/icons";
 import {
   RevealH1, RevealH2, RevealImg,
   StaggerGrid, StaggerItem,
@@ -28,13 +28,16 @@ export default function Example6() {
         duration={1500}
         bgColor="#181512"
         brand={
-          <div className="flex flex-col items-center gap-4 px-6 text-center">
-            <span className="text-4xl md:text-6xl tracking-tight text-[#FCF8F3] [font-family:var(--font-serif)]">
-              <span className="italic">PsyLeśny</span> Zaułek
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.4em] font-medium text-[#B85C38] [font-family:var(--font-sans)]">
-              Volume I · Salon groomerski
-            </span>
+          <div className="flex flex-col items-center gap-5 px-6 text-center">
+            <PawIcon size={48} style={{ color: "#B85C38" }} />
+            <div className="flex flex-col items-center gap-3">
+              <span className="text-4xl md:text-6xl tracking-tight text-[#FCF8F3] [font-family:var(--font-serif)]">
+                <span className="italic">PsyLeśny</span> Zaułek
+              </span>
+              <span className="text-[10px] uppercase tracking-[0.4em] font-medium text-[#B85C38] [font-family:var(--font-sans)]">
+                Volume I · Salon groomerski
+              </span>
+            </div>
           </div>
         }
       />

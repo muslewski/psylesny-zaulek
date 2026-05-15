@@ -27,6 +27,8 @@ export default function Example2() {
         variant="stairs"
         duration={1400}
         bgColor="#1A1A1A"
+        iconColor="#FFFFFF"
+        iconSize={52}
         brandClassName="text-4xl md:text-6xl font-bold tracking-tight text-white"
         taglineClassName="text-[10px] uppercase tracking-[0.4em] font-medium text-white/60"
         stairCount={8}

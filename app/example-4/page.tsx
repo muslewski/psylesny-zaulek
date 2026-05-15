@@ -29,6 +29,8 @@ export default function Example4() {
         variant="curtain"
         duration={1400}
         bgColor="#0A0A0A"
+        iconColor="#FFE600"
+        iconSize={56}
         brandClassName="text-4xl md:text-6xl font-black uppercase tracking-tight text-[#FFE600]"
         taglineClassName="text-xs uppercase tracking-[0.3em] font-bold text-[#FFE600]/80"
       />

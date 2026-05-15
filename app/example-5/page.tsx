@@ -29,6 +29,8 @@ export default function Example5() {
         variant="slide"
         duration={1600}
         bgColor="#0A0A0A"
+        iconColor="#C9A55A"
+        iconSize={48}
         brandClassName="text-3xl md:text-5xl font-light tracking-[0.15em] uppercase text-[#F4EFE6] [font-family:var(--font-serif)]"
         taglineClassName="text-[10px] uppercase tracking-[0.4em] font-medium text-[#C9A55A]"
       />

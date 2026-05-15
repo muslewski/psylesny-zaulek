@@ -33,6 +33,11 @@ export default function Example9() {
         variant="circle"
         duration={1400}
         bgColor="#E8E4DC"
+        icon={
+          <div className="grid size-16 place-items-center rounded-full bg-[#E8E4DC] shadow-[6px_6px_14px_#c9c5be,-6px_-6px_14px_#ffffff]">
+            <PawIcon size={28} style={{ color: "#E89A7C" }} />
+          </div>
+        }
         brandClassName="text-4xl md:text-5xl font-bold tracking-tight text-[#3A3633]"
         taglineClassName="text-[10px] uppercase tracking-[0.4em] font-medium text-[#E89A7C]"
       />
