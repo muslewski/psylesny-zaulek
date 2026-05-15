@@ -181,7 +181,8 @@ export default function Example10() {
               return (
                 <StaggerItem
                   key={f.title}
-                  className="relative rounded-3xl p-6 transition hover:-rotate-1"
+                  className="relative rounded-3xl p-6"
+                  whileHover={{ rotate: -1, transition: { duration: 0.2 } }}
                   style={{ background: palettes.bg, color: palettes.fg }}
                 >
                   <div className="absolute -top-3 left-6 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-black uppercase tracking-wider" style={{ color: brown }}>

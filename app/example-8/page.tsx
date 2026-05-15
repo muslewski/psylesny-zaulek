@@ -180,9 +180,9 @@ export default function Example8() {
             return (
               <RevealArticle
                 key={s.id}
-                className="group relative overflow-hidden rounded-[2rem] border border-[#1F3A2D]/15 bg-white p-7 transition hover:border-[#1F3A2D]/40 hover:shadow-lg"
+                className="group relative overflow-hidden rounded-[2rem] border border-[#1F3A2D]/15 bg-white p-7 transition-[border-color,box-shadow] duration-200 hover:border-[#1F3A2D]/40 hover:shadow-lg"
               >
-                <LeafSvg className="absolute -right-8 -top-8 size-32 opacity-5 transition group-hover:opacity-10" style={{ color: forest }} />
+                <LeafSvg className="absolute -right-8 -top-8 size-32 opacity-5 transition-opacity duration-200 group-hover:opacity-10" style={{ color: forest }} />
                 <div className="relative">
                   <div className="grid size-12 place-items-center rounded-full" style={{ background: paper, color: forest }}>
                     <Icon name={s.icon as never} size={22} />
